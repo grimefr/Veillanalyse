@@ -1,0 +1,192 @@
+# =============================================================================
+# DOPPELGANGER TRACKER - SOURCE CONFIGURATION
+# =============================================================================
+# Configuration des sources de données pour la collecte
+# =============================================================================
+
+# --- Configuration globale ---
+settings:
+  initial_lookback_days: 7        # Période initiale de collecte (jours)
+  max_messages_per_channel: 100   # Messages max par channel Telegram
+  collection_interval: 300        # Intervalle de collecte (secondes)
+  request_timeout: 30             # Timeout HTTP (secondes)
+
+# =============================================================================
+# TELEGRAM CHANNELS
+# =============================================================================
+telegram:
+  # Canaux pro-Kremlin à surveiller
+  pro_kremlin:
+    - name: "Rybar"
+      channel: "@ryaborig"
+      language: "ru"
+      type: "amplifier"
+      priority: "high"
+    
+    - name: "Colonelcassad"
+      channel: "@boris_rozhin"
+      language: "ru"
+      type: "amplifier"
+      priority: "high"
+    
+    - name: "Intel Slava Z"
+      channel: "@inteIslavaz"
+      language: "en"
+      type: "amplifier"
+      priority: "high"
+
+  # Canaux francophones à surveiller
+  francophone:
+    - name: "Donbass Insider FR"
+      channel: "@donbass_insider_fr"
+      language: "fr"
+      type: "amplifier"
+      priority: "medium"
+
+  # Canaux géopolitiques
+  geopolitics:
+    - name: "Geopolitics Live"
+      channel: "@geopolitics_live"
+      language: "en"
+      type: "monitor"
+      priority: "medium"
+
+# =============================================================================
+# MEDIA RSS FEEDS
+# =============================================================================
+media:
+  # Médias mainstream par langue
+  mainstream:
+    fr:
+      - name: "Le Monde"
+        url: "https://www.lemonde.fr/rss/une.xml"
+        type: "mainstream"
+      
+      - name: "AFP"
+        url: "https://www.afp.com/fr/actus/afp_actualite/792,31,9,7,33/feed"
+        type: "mainstream"
+      
+      - name: "France 24"
+        url: "https://www.france24.com/fr/rss"
+        type: "mainstream"
+
+    en:
+      - name: "Reuters"
+        url: "https://feeds.reuters.com/reuters/worldNews"
+        type: "mainstream"
+      
+      - name: "BBC World"
+        url: "http://feeds.bbci.co.uk/news/world/rss.xml"
+        type: "mainstream"
+      
+      - name: "AP News"
+        url: "https://rsshub.app/apnews/topics/world-news"
+        type: "mainstream"
+
+    ru:
+      - name: "Meduza"
+        url: "https://meduza.io/rss/all"
+        language: "ru"
+        type: "independent"
+
+  # Médias alternatifs/pro-russes (à surveiller)
+  alternative:
+    - name: "RT English"
+      url: "https://www.rt.com/rss/"
+      language: "en"
+      type: "alternative"
+    
+    - name: "RT France"
+      url: "https://francais.rt.com/rss"
+      language: "fr"
+      type: "alternative"
+    
+    - name: "Sputnik FR"
+      url: "https://fr.sputniknews.africa/export/rss2/archive/index.xml"
+      language: "fr"
+      type: "alternative"
+
+# =============================================================================
+# FACT-CHECKERS
+# =============================================================================
+factcheckers:
+  - name: "AFP Factuel"
+    url: "https://factuel.afp.com/rss.xml"
+    language: "fr"
+    type: "factcheck"
+
+  - name: "EU vs Disinfo"
+    url: "https://euvsdisinfo.eu/feed/"
+    language: "en"
+    type: "factcheck"
+
+  - name: "Snopes"
+    url: "https://www.snopes.com/feed/"
+    language: "en"
+    type: "factcheck"
+
+  - name: "Full Fact"
+    url: "https://fullfact.org/rss/articles/"
+    language: "en"
+    type: "factcheck"
+
+  - name: "Les Décodeurs"
+    url: "https://www.lemonde.fr/les-decodeurs/rss_full.xml"
+    language: "fr"
+    type: "factcheck"
+
+# =============================================================================
+# DOPPELGANGER DOMAINS
+# =============================================================================
+# Domaines de typosquatting confirmés
+doppelganger_domains:
+  confirmed:
+    # Basé sur le DOJ Indictment Sept 2024
+    - domain: "reuters.cfd"
+      impersonates: "reuters.com"
+      typosquat_type: "tld_swap"
+      attribution_source: "DOJ Indictment 2024"
+    
+    - domain: "lemonde.ltd"
+      impersonates: "lemonde.fr"
+      typosquat_type: "tld_swap"
+      attribution_source: "DOJ Indictment 2024"
+    
+    - domain: "spiegel.ltd"
+      impersonates: "spiegel.de"
+      typosquat_type: "tld_swap"
+      attribution_source: "DOJ Indictment 2024"
+    
+    - domain: "bild.ltd"
+      impersonates: "bild.de"
+      typosquat_type: "tld_swap"
+      attribution_source: "EU DisinfoLab"
+    
+    - domain: "faz.ltd"
+      impersonates: "faz.net"
+      typosquat_type: "tld_swap"
+      attribution_source: "EU DisinfoLab"
+    
+    - domain: "guardian.ltd"
+      impersonates: "theguardian.com"
+      typosquat_type: "tld_swap"
+      attribution_source: "Graphika"
+    
+    - domain: "washingtonpost.ltd"
+      impersonates: "washingtonpost.com"
+      typosquat_type: "tld_swap"
+      attribution_source: "DOJ Indictment 2024"
+    
+    - domain: "foxnews.ltd"
+      impersonates: "foxnews.com"
+      typosquat_type: "tld_swap"
+      attribution_source: "NewsGuard"
+
+  # TLDs suspects couramment utilisés
+  suspicious_tlds:
+    - ".cfd"
+    - ".ltd"
+    - ".top"
+    - ".xyz"
+    - ".click"
+    - ".link"

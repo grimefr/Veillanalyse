@@ -1,0 +1,264 @@
+# =============================================================================
+# DOPPELGANGER TRACKER - KEYWORDS CONFIGURATION
+# =============================================================================
+# Mots-clés pour la détection de narratifs et manipulation
+# =============================================================================
+
+settings:
+  min_matches_for_narrative: 2
+  case_sensitive: false
+
+# =============================================================================
+# NARRATIVES
+# =============================================================================
+narratives:
+  # Narratif anti-Ukraine
+  anti_ukraine:
+    name: "Ukraine Corruption/Failure"
+    description: "Narratif présentant l'Ukraine comme corrompue ou en échec"
+    keywords:
+      fr:
+        - "régime de kiev"
+        - "nazis ukrainiens"
+        - "corruption ukraine"
+        - "zelensky dictateur"
+        - "échec ukrainien"
+        - "fascistes ukrainiens"
+      en:
+        - "kiev regime"
+        - "ukrainian nazis"
+        - "ukraine corruption"
+        - "zelensky dictator"
+        - "ukrainian failure"
+        - "ukrainian fascists"
+        - "corrupt ukraine"
+      ru:
+        - "киевский режим"
+        - "украинские нацисты"
+        - "коррупция украины"
+
+  # Narratif anti-OTAN
+  anti_nato:
+    name: "NATO Aggression/Expansion"
+    description: "Narratif présentant l'OTAN comme agressif ou expansionniste"
+    keywords:
+      fr:
+        - "expansion otan"
+        - "agression otan"
+        - "menace otan"
+        - "provocation occidentale"
+        - "encerclement russie"
+      en:
+        - "nato expansion"
+        - "nato aggression"
+        - "nato threat"
+        - "western provocation"
+        - "encirclement russia"
+      ru:
+        - "расширение нато"
+        - "агрессия нато"
+        - "угроза нато"
+
+  # Narratif anti-UE
+  anti_eu:
+    name: "EU Crisis/Failure"
+    description: "Narratif présentant l'UE en crise ou déclin"
+    keywords:
+      fr:
+        - "crise énergétique europe"
+        - "sanctions suicidaires"
+        - "échec sanctions"
+        - "europe se tire une balle"
+        - "européens souffrent"
+        - "hiver difficile europe"
+      en:
+        - "europe energy crisis"
+        - "suicidal sanctions"
+        - "sanctions backfire"
+        - "europe shooting itself"
+        - "europeans suffer"
+        - "cold winter europe"
+      ru:
+        - "энергетический кризис европы"
+        - "санкции провал"
+
+  # Narratif pro-Russie
+  pro_russia:
+    name: "Russia Justified/Strong"
+    description: "Narratif justifiant les actions russes ou présentant la Russie comme forte"
+    keywords:
+      fr:
+        - "opération spéciale"
+        - "dénazification"
+        - "démilitarisation"
+        - "protection populations"
+        - "russie victime"
+        - "victoire russe"
+      en:
+        - "special operation"
+        - "denazification"
+        - "demilitarization"
+        - "protecting populations"
+        - "russia victim"
+        - "russian victory"
+      ru:
+        - "специальная операция"
+        - "денацификация"
+        - "демилитаризация"
+
+  # Narratif sabotage de la paix
+  peace_sabotage:
+    name: "West Sabotages Peace"
+    description: "Narratif accusant l'Occident de saboter la paix"
+    keywords:
+      fr:
+        - "occident refuse paix"
+        - "négociations sabotées"
+        - "usa prolonge guerre"
+        - "pas de paix possible"
+        - "occident veut la guerre"
+      en:
+        - "west refuses peace"
+        - "negotiations sabotaged"
+        - "usa prolongs war"
+        - "no peace possible"
+        - "west wants war"
+      ru:
+        - "запад против мира"
+        - "переговоры саботаж"
+
+# =============================================================================
+# MANIPULATION MARKERS
+# =============================================================================
+manipulation_markers:
+  # Appel à l'émotion
+  emotional_appeal:
+    fr:
+      - "inacceptable"
+      - "scandaleux"
+      - "inadmissible"
+      - "révoltant"
+      - "horrifiant"
+      - "effroyable"
+    en:
+      - "unacceptable"
+      - "outrageous"
+      - "shocking"
+      - "horrifying"
+      - "appalling"
+      - "disgraceful"
+    ru:
+      - "неприемлемо"
+      - "возмутительно"
+      - "ужасающе"
+
+  # Fausse autorité
+  false_authority:
+    fr:
+      - "les experts disent"
+      - "selon des sources"
+      - "il est bien connu"
+      - "tout le monde sait"
+      - "de nombreuses personnes pensent"
+    en:
+      - "experts say"
+      - "according to sources"
+      - "it is well known"
+      - "everyone knows"
+      - "many people think"
+    ru:
+      - "эксперты говорят"
+      - "по данным источников"
+      - "всем известно"
+
+  # Urgence artificielle
+  artificial_urgency:
+    fr:
+      - "maintenant ou jamais"
+      - "dernière chance"
+      - "il est urgent"
+      - "avant qu'il soit trop tard"
+      - "temps presse"
+    en:
+      - "now or never"
+      - "last chance"
+      - "urgent action needed"
+      - "before it's too late"
+      - "time is running out"
+    ru:
+      - "сейчас или никогда"
+      - "последний шанс"
+      - "срочно"
+
+  # Généralisation excessive
+  overgeneralization:
+    fr:
+      - "tous les"
+      - "chaque fois"
+      - "toujours"
+      - "jamais"
+      - "personne ne"
+      - "tout le monde"
+    en:
+      - "all of them"
+      - "every time"
+      - "always"
+      - "never"
+      - "nobody"
+      - "everyone"
+    ru:
+      - "все они"
+      - "каждый раз"
+      - "всегда"
+      - "никогда"
+
+  # Whataboutism
+  whataboutism:
+    fr:
+      - "et qu'en est-il de"
+      - "mais les américains"
+      - "l'occident aussi"
+      - "deux poids deux mesures"
+    en:
+      - "what about"
+      - "but the americans"
+      - "the west also"
+      - "double standards"
+    ru:
+      - "а что насчет"
+      - "а американцы"
+      - "двойные стандарты"
+
+# =============================================================================
+# TRACKED ENTITIES
+# =============================================================================
+tracked_entities:
+  persons:
+    - "Zelensky"
+    - "Putin"
+    - "Biden"
+    - "Macron"
+    - "Scholz"
+    - "Prigozhin"
+    - "Lavrov"
+  
+  organizations:
+    - "OTAN"
+    - "NATO"
+    - "Union européenne"
+    - "European Union"
+    - "ONU"
+    - "UN"
+    - "Wagner"
+    - "FSB"
+    - "GRU"
+  
+  locations:
+    - "Ukraine"
+    - "Donbass"
+    - "Crimée"
+    - "Crimea"
+    - "Moscou"
+    - "Moscow"
+    - "Kiev"
+    - "Kyiv"

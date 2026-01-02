@@ -1,0 +1,98 @@
+# =============================================================================
+# DOPPELGANGER TRACKER - Docker Ignore
+# =============================================================================
+# Exclude files and directories from Docker build context to reduce image size
+# and improve build performance
+# =============================================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+virtualenv/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+wheels/
+*.egg
+
+# --- Data & Runtime ---
+data/
+logs/
+exports/
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# Telegram session files
+*.session
+*.session-journal
+
+# --- Git ---
+.git/
+.gitignore
+.gitattributes
+.github/
+
+# --- IDE & Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# --- Testing ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# --- Docker ---
+.dockerignore
+Dockerfile*
+docker-compose*.yml
+
+# --- Documentation ---
+docs/
+*.md
+README*
+CHANGELOG*
+LICENSE*
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Environment & Secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# --- Misc ---
+*.bak
+*.tmp
+*.temp
+.cache/

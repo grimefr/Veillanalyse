@@ -1,0 +1,373 @@
+# =============================================================================
+# DOPPELGANGER TRACKER - COGNITIVE WARFARE CONFIGURATION
+# =============================================================================
+# Framework DISARM pour l'analyse de guerre cognitive
+# Basé sur le DISARM Framework (Disinformation Analysis & Risk Management)
+# =============================================================================
+
+metadata:
+  framework: "DISARM"
+  version: "1.0"
+  description: "Grille d'analyse des opérations d'influence informationnelle"
+
+# =============================================================================
+# PHASE 1: PLAN (Planification)
+# =============================================================================
+plan:
+  description: "Objectifs stratégiques et planification de l'opération"
+  indicators:
+    strategic_goals:
+      name: "Objectifs stratégiques"
+      description: "Identification des objectifs à long terme"
+      severity: "high"
+      keywords:
+        fr:
+          - "déstabilisation"
+          - "division sociale"
+          - "polarisation"
+          - "discrédit institutions"
+        en:
+          - "destabilization"
+          - "social division"
+          - "polarization"
+          - "discredit institutions"
+        ru:
+          - "дестабилизация"
+          - "социальный раскол"
+
+# =============================================================================
+# PHASE 2: PREPARE (Préparation)
+# =============================================================================
+prepare:
+  description: "Développement des capacités et des actifs"
+  indicators:
+    persona_development:
+      name: "Développement de personas"
+      description: "Création de faux profils et identités"
+      severity: "medium"
+      keywords:
+        fr:
+          - "compte anonyme"
+          - "nouveau profil"
+          - "source anonyme"
+        en:
+          - "anonymous account"
+          - "new profile"
+          - "anonymous source"
+
+    infrastructure:
+      name: "Infrastructure technique"
+      description: "Mise en place d'infrastructure (domaines, serveurs)"
+      severity: "high"
+      keywords:
+        fr:
+          - "site miroir"
+          - "clone"
+          - "copie"
+        en:
+          - "mirror site"
+          - "clone"
+          - "copy"
+
+# =============================================================================
+# PHASE 3: ASSESS (Évaluation)
+# =============================================================================
+assess:
+  description: "Analyse de l'environnement informationnel cible"
+  indicators:
+    audience_analysis:
+      name: "Analyse d'audience"
+      description: "Identification des vulnérabilités de l'audience cible"
+      severity: "medium"
+      keywords:
+        fr:
+          - "opinion publique"
+          - "sondage"
+          - "tendance"
+          - "viral"
+        en:
+          - "public opinion"
+          - "poll"
+          - "trending"
+          - "viral"
+        ru:
+          - "общественное мнение"
+          - "тренд"
+
+    vulnerability_mapping:
+      name: "Cartographie des vulnérabilités"
+      description: "Identification des fractures sociales exploitables"
+      severity: "high"
+      keywords:
+        fr:
+          - "clivage"
+          - "fracture sociale"
+          - "mécontentement"
+          - "colère"
+          - "frustration"
+        en:
+          - "division"
+          - "social fracture"
+          - "discontent"
+          - "anger"
+          - "frustration"
+
+    media_landscape:
+      name: "Paysage médiatique"
+      description: "Analyse des canaux de diffusion"
+      severity: "low"
+      keywords:
+        fr:
+          - "mainstream media"
+          - "médias alternatifs"
+          - "réseaux sociaux"
+        en:
+          - "mainstream media"
+          - "alternative media"
+          - "social networks"
+
+# =============================================================================
+# PHASE 4: DEVELOP (Développement)
+# =============================================================================
+develop:
+  description: "Création du contenu et des narratifs"
+  indicators:
+    narrative_creation:
+      name: "Création de narratifs"
+      description: "Développement de narratifs manipulateurs"
+      severity: "high"
+      keywords:
+        fr:
+          - "on nous cache"
+          - "la vérité que"
+          - "ce qu'ils ne disent pas"
+          - "révélation"
+          - "scandale caché"
+        en:
+          - "they hide"
+          - "the truth that"
+          - "what they don't tell"
+          - "revelation"
+          - "hidden scandal"
+        ru:
+          - "от нас скрывают"
+          - "правда о"
+
+    content_fabrication:
+      name: "Fabrication de contenu"
+      description: "Création de faux contenus ou contenus trompeurs"
+      severity: "critical"
+      keywords:
+        fr:
+          - "preuve exclusive"
+          - "document secret"
+          - "fuite"
+          - "source confidentielle"
+        en:
+          - "exclusive proof"
+          - "secret document"
+          - "leak"
+          - "confidential source"
+
+    emotional_manipulation:
+      name: "Manipulation émotionnelle"
+      description: "Utilisation d'appels émotionnels"
+      severity: "medium"
+      keywords:
+        fr:
+          - "inacceptable"
+          - "scandaleux"
+          - "révoltant"
+          - "incroyable"
+          - "choquant"
+        en:
+          - "unacceptable"
+          - "outrageous"
+          - "revolting"
+          - "unbelievable"
+          - "shocking"
+
+# =============================================================================
+# PHASE 5: LAUNCH (Lancement)
+# =============================================================================
+launch:
+  description: "Diffusion initiale du contenu"
+  indicators:
+    seeding:
+      name: "Ensemencement"
+      description: "Publication initiale stratégique"
+      severity: "medium"
+      keywords:
+        fr:
+          - "breaking"
+          - "urgent"
+          - "alerte"
+          - "flash"
+        en:
+          - "breaking"
+          - "urgent"
+          - "alert"
+          - "flash"
+
+    cross_platform:
+      name: "Multi-plateforme"
+      description: "Publication coordonnée sur plusieurs plateformes"
+      severity: "high"
+      keywords:
+        fr:
+          - "partagez"
+          - "diffusez"
+          - "faites tourner"
+          - "rt svp"
+        en:
+          - "share"
+          - "spread"
+          - "retweet"
+          - "pass it on"
+
+# =============================================================================
+# PHASE 6: AMPLIFY (Amplification)
+# =============================================================================
+amplify:
+  description: "Amplification et propagation du contenu"
+  indicators:
+    coordinated_sharing:
+      name: "Partage coordonné"
+      description: "Amplification artificielle coordonnée"
+      severity: "critical"
+      keywords:
+        fr:
+          - "tout le monde partage"
+          - "viral"
+          - "buzz"
+          - "tendance"
+        en:
+          - "everyone share"
+          - "viral"
+          - "buzz"
+          - "trending"
+
+    bot_activity:
+      name: "Activité de bots"
+      description: "Amplification automatisée"
+      severity: "critical"
+      indicators:
+        - "Publication très rapide"
+        - "Contenu identique répété"
+        - "Patterns horaires anormaux"
+
+    hashtag_hijacking:
+      name: "Détournement de hashtags"
+      description: "Utilisation de hashtags populaires pour visibilité"
+      severity: "medium"
+      keywords:
+        fr:
+          - "hashtag"
+          - "tendance"
+        en:
+          - "hashtag"
+          - "trending"
+
+# =============================================================================
+# PHASE 7: PERSIST (Persistance)
+# =============================================================================
+persist:
+  description: "Maintien de la présence et de l'influence"
+  indicators:
+    narrative_adaptation:
+      name: "Adaptation du narratif"
+      description: "Évolution du narratif face aux contre-arguments"
+      severity: "high"
+      keywords:
+        fr:
+          - "nouvelle preuve"
+          - "confirmation"
+          - "mise à jour"
+          - "précision"
+        en:
+          - "new proof"
+          - "confirmation"
+          - "update"
+          - "clarification"
+
+    community_building:
+      name: "Construction de communauté"
+      description: "Création de groupes et communautés durables"
+      severity: "medium"
+      keywords:
+        fr:
+          - "rejoignez"
+          - "groupe"
+          - "communauté"
+          - "mouvement"
+        en:
+          - "join"
+          - "group"
+          - "community"
+          - "movement"
+
+# =============================================================================
+# TECHNIQUES DE MANIPULATION
+# =============================================================================
+techniques:
+  whataboutism:
+    name: "Whataboutism"
+    description: "Détourner en pointant des fautes similaires ailleurs"
+    severity: "medium"
+    examples:
+      - "Et l'Irak alors?"
+      - "What about Iraq?"
+
+  false_equivalence:
+    name: "Fausse équivalence"
+    description: "Mettre sur le même plan des situations incomparables"
+    severity: "high"
+
+  firehose_of_falsehood:
+    name: "Firehose of Falsehood"
+    description: "Submerger avec de nombreuses fausses informations"
+    severity: "critical"
+
+  straw_man:
+    name: "Homme de paille"
+    description: "Déformer l'argument adverse pour le réfuter facilement"
+    severity: "medium"
+
+  appeal_to_authority:
+    name: "Appel à l'autorité"
+    description: "Citer des experts non qualifiés ou inventés"
+    severity: "high"
+
+  conspiracy_theory:
+    name: "Théorie du complot"
+    description: "Invoquer des complots pour expliquer les événements"
+    severity: "critical"
+    keywords:
+      fr:
+        - "complot"
+        - "ils veulent"
+        - "plan secret"
+        - "nouvel ordre mondial"
+        - "on nous ment"
+      en:
+        - "conspiracy"
+        - "they want"
+        - "secret plan"
+        - "new world order"
+        - "they lie to us"
+
+# =============================================================================
+# SCORING
+# =============================================================================
+scoring:
+  severity_weights:
+    low: 1
+    medium: 2
+    high: 3
+    critical: 5
+
+  thresholds:
+    low_risk: 5
+    medium_risk: 10
+    high_risk: 20
+    critical_risk: 30
