@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎯 Doppelganger Tracker
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
@@ -508,3 +509,6 @@ For questions or issues:
 ---
 
 **⚠️ Disclaimer**: This tool is for educational and research purposes only. The authors are not responsible for misuse.
+=======
+# Veillanalyse
+>>>>>>> abeb8b6190ec56bd1d555466c7a7c47450b91111
